@@ -103,5 +103,3 @@ JOIN Sales.SalesOrderDetail sod ON soh.SalesOrderID = sod.SalesOrderID
 JOIN Production.Product p ON sod.ProductID = p.ProductID
 JOIN Production.ProductSubcategory psc ON p.ProductSubcategoryID = psc.ProductSubcategoryID
 JOIN Production.ProductCategory pc ON psc.ProductCategoryID = pc.ProductCategoryID
-
-SELECT COUNT(distinct a.SalesOrderID) FROM Sales.SalesOrderHeader a
